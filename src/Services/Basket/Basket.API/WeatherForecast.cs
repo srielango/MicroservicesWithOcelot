@@ -1,4 +1,4 @@
-namespace Catelog.API
+namespace Basket.API
 {
     public class WeatherForecast
     {
