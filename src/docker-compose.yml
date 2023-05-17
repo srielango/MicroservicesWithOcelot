@@ -21,11 +21,11 @@ services:
   portainer:
     image: portainer/portainer-ce
 
-  catelog.api:
-    image: ${DOCKER_REGISTRY-}catelogapi
+  catalog.api:
+    image: ${DOCKER_REGISTRY-}catalogapi
     build:
       context: .
-      dockerfile: Services/Catelog/Catelog.API/Dockerfile
+      dockerfile: Services/Catalog/Catalog.API/Dockerfile
 
   basket.api:
     image: ${DOCKER_REGISTRY-}basketapi
@@ -51,9 +51,16 @@ services:
       context: .
       dockerfile: Services/Ordering/Ordering.API/Dockerfile
 
+  ocelotapigw:
+    image: ${DOCKER_REGISTRY-}ocelotapigw
+    build:
+      context: .
+      dockerfile: ApiGateways/OcelotApiGw/Dockerfile
+
 volumes:
   mongo_data:
   portainer_data:
   postgres_data:
   pgadmin_data:
+
 

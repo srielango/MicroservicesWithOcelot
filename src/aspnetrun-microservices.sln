@@ -5,9 +5,9 @@ VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{9466C7E0-B481-4130-A071-1BE6978A7412}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catelog", "Catelog", "{9C135AA0-7E3C-44BE-8712-96330D60BB4F}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{9C135AA0-7E3C-44BE-8712-96330D60BB4F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catelog.API", "Services\Catelog\Catelog.API\Catelog.API.csproj", "{4155F86E-3830-4C72-9DD1-53C678125532}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Catalog.API", "Services\Catalog\Catalog.API\Catalog.API.csproj", "{4155F86E-3830-4C72-9DD1-53C678125532}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{6590085C-A23B-41DE-BC5F-D9B0702B7A83}"
 EndProject
@@ -37,7 +37,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EvenBus.Messages", "Buildin
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateways", "ApiGateways", "{24682B37-8397-429E-9EF5-D9A92078AFE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OcelotApiGw", "ApiGateways\OcelotApiGw\OcelotApiGw.csproj", "{ADB8FB8A-2BBC-430D-8A9E-28CAEF442FD4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OcelotApiGw", "ApiGateways\OcelotApiGw\OcelotApiGw.csproj", "{ADB8FB8A-2BBC-430D-8A9E-28CAEF442FD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "..\WebApplication1\WebApplication1.csproj", "{B17D8B17-C063-4661-96E6-33EBD20B0162}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -89,6 +91,10 @@ Global
 		{ADB8FB8A-2BBC-430D-8A9E-28CAEF442FD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ADB8FB8A-2BBC-430D-8A9E-28CAEF442FD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ADB8FB8A-2BBC-430D-8A9E-28CAEF442FD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B17D8B17-C063-4661-96E6-33EBD20B0162}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B17D8B17-C063-4661-96E6-33EBD20B0162}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B17D8B17-C063-4661-96E6-33EBD20B0162}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B17D8B17-C063-4661-96E6-33EBD20B0162}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -108,6 +114,7 @@ Global
 		{21359FF8-5D79-4CDF-B3FE-292F636A49A1} = {0E3F9807-D694-4373-B739-F44632C1FFAF}
 		{4FC326F3-F5F5-41C1-91CC-98CB31718A8A} = {6772A20F-AD65-4337-91EE-8DCCA4A00137}
 		{ADB8FB8A-2BBC-430D-8A9E-28CAEF442FD4} = {24682B37-8397-429E-9EF5-D9A92078AFE2}
+		{B17D8B17-C063-4661-96E6-33EBD20B0162} = {24682B37-8397-429E-9EF5-D9A92078AFE2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C8448E15-DB85-4A62-80A0-7AAC42CBAADA}

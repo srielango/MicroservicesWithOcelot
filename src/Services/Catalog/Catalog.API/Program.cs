@@ -1,5 +1,5 @@
-using Catelog.API.Data;
-using Catelog.API.Repositories;
+using Catalog.API.Data;
+using Catalog.API.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 

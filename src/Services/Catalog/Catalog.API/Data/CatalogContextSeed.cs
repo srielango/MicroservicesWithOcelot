@@ -1,14 +1,14 @@
-﻿using Catelog.API.Entities;
+﻿using Catalog.API.Entities;
 using MongoDB.Driver;
 
-namespace Catelog.API.Data
+namespace Catalog.API.Data
 {
     public class CatalogContextSeed
     {
         public static void SeedData(IMongoCollection<Product> productCollection)
         {
             bool existProduct = productCollection.Find(p => true).Any();
-            if(!existProduct)
+            if (!existProduct)
             {
                 productCollection.InsertManyAsync(GetPreconfiguredProducts());
             }

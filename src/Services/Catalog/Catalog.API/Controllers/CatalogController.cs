@@ -1,9 +1,9 @@
-﻿using Catelog.API.Entities;
-using Catelog.API.Repositories;
+﻿using Catalog.API.Entities;
+using Catalog.API.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 
-namespace Catelog.API.Controllers
+namespace Catalog.API.Controllers
 {
     [ApiController]
     [Route("api/v1/[controller]")]
@@ -31,7 +31,7 @@ namespace Catelog.API.Controllers
         public async Task<ActionResult<Product>> GetProductById(string id)
         {
             var product = await _productRepository.GetProduct(id);
-            if(product == null)
+            if (product == null)
             {
                 _logger.LogError($"Product with id: {id}, not found.");
                 return NotFound();
