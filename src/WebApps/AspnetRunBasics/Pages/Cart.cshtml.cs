@@ -30,7 +30,7 @@ namespace AspnetRunBasics.Pages
         {
             var userName = "swn";
             var basket = await _basketService.GetBasket(userName);
-            var basketItem = basket.Items.Where(x => x.ProductId == productId).Single();
+            var basketItem = basket.Items.Where(x => x.ProductId == productId).First();
             basket.Items.Remove(basketItem);
 
             await _basketService.UpdateBasket(basket);

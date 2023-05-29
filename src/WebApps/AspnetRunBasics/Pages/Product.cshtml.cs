@@ -30,7 +30,7 @@ namespace AspnetRunBasics.Pages
         {
             var productList = await _catalogService.GetCatalog();
 
-            CategoryList = productList.Select(p => p.Category).ToList();
+            CategoryList = productList.Select(p => p.Category).Distinct();
 
             if (!string.IsNullOrEmpty(categoryName))
             {
